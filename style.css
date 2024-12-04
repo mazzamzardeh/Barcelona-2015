@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: navy;  /* Navy Blue */
+    color: white;  /* White */
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/Camp-Nou-3.webp) no-repeat center/cover;
+    opacity: 0.2;
+    animation: moveBackground 30s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+header {
+    background-color: crimson;  /* Crimson Red */
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: goldenrod;  /* Golden Yellow */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: goldenrod;  
+}
+
+.burger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: crimson;  
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    #menu-toggle:checked + .burger-menu + .nav-links {
+        display: flex;
+    }
+}
