@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FC Barcelona Tribute</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/0a25275859.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/Fc_barcelona.svg.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Contact FC Barcelona Tribute</div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-form">
+            <h1>Contact the Developer</h1>
+            <form action="submit_form.php" method="POST"> <!-- Example server-side action -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p cl>&copy; 2024 FC Barcelona Tribute. All rights reserved.</p>
+        <a href="index.html" class="back-button">Back to Home</a>
+        <a href="https://www.instagram.com/azzam.zardah" target="_blank">
+            <i class="fab fa-instagram"></i> 
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,3 +1,6 @@
+html {
+    font-size: 10px;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,29 +18,39 @@ body::before {
     height: 100%;
     background: url(/images/msn.jpg) no-repeat center/cover;
     opacity: 0.5;
-    animation: moveBackground 5s linear infinite;
+    animation: moveBackground 10s linear infinite;
     z-index: -1;
 }
 
 @keyframes moveBackground {
-    0% { background-position: 0 0; }
-    100% { background-position: 100% 100%; }
+    0%, 20% {
+        background-image: url('/images/msn.jpg');
+    }
+    25%, 45% {
+        background-image: url('/images/neym.jpg');
+    }
+    50%, 70% {
+        background-image: url('/images/Camp-Nou-3.webp');
+    }
+    75%, 100% {
+        background-image: url('/images/gettyimages-476127646-612x612.jpg');
+    }
 }
 
 header {
     background-color: navy;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
 header .logo {
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
 .players {
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -46,7 +59,7 @@ header .logo {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     border-radius: 8px;
     overflow: hidden;
     width: 90%;
@@ -60,7 +73,8 @@ header .logo {
 }
 
 .player-info {
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
 }
 
 .player-info h2 {
@@ -68,21 +82,23 @@ header .logo {
 }
 
 footer {
+    font-size: 1.5rem;
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 100%;
 }
 
 .back-button {
+    font-size: 1.5rem;
     background-color: gold;
     padding: 0.8rem 1.5rem;
     color: navy;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .back-button:hover {
