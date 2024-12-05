@@ -41,12 +41,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    position: relative;
+}
+
+.header-logo {
+    height: 50px;                     /* Adjust logo size */
+    position: absolute;               /* Position it in the center */
+    left: 50%;
+    transform: translateX(-50%);      /* Center the logo */
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: goldenrod;  
+    color: goldenrod;
+    margin-left: 10px;
 }
 
 .nav-links {
@@ -94,6 +103,13 @@ nav {
 
     #menu-toggle:checked + .burger-menu + .nav-links {
         display: flex;
+    }
+
+    .header-logo {
+        height: 40px;                 /* Adjust size for smaller screens */
+    }
+    .logo {
+        display: none;
     }
 }
 

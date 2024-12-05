@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: navy;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: crimson;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.finals {
+    padding: 1rem;
+}
+
+.final-row {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: navy;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 700px;
+    animation: slideIn 1.5s ease-in-out;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.club-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.logo-container span {
+    font-size: 2rem;
+    color: crimson;
+    font-weight: bold;
+}
+
+.final-info {
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: left;
+}
+
+.final-info h2 {
+    color: crimson;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    background-color: crimson;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    margin-top: auto;
+}
+
+.back-button {
+    background-color: gold;
+    padding: 10px 20px;
+    color: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.back-button:hover {
+    background-color: goldenrod;
+}
