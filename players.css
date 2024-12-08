@@ -21,7 +21,7 @@ body::before {
     animation: moveBackground 10s linear infinite;
     z-index: -1;
 }
-
+/*
 @keyframes moveBackground {
     0%, 20% {
         background-image: url('/images/msn.jpg');
@@ -36,6 +36,7 @@ body::before {
         background-image: url('/images/gettyimages-476127646-612x612.jpg');
     }
 }
+    */
 
 header {
     background-color: navy;
