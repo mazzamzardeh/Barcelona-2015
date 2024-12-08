@@ -24,16 +24,16 @@ body::before {
 
 @keyframes moveBackground {
     0%, 20% {
-        background-image: url('/images/msn.jpg');
+        background-image: url('images/msn.jpg');
     }
     25%, 45% {
-        background-image: url('/images/neym.jpg');
+        background-image: url('images/neym.jpg');
     }
     50%, 70% {
-        background-image: url('/images/Camp-Nou-3.webp');
+        background-image: url('images/Camp-Nou-3.webp');
     }
     75%, 100% {
-        background-image: url('/images/gettyimages-476127646-612x612.jpg');
+        background-image: url('images/gettyimages-476127646-612x612.jpg');
     }
 }
     
